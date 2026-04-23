@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belie Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -20,129 +21,61 @@
         </ul>
     </nav>
 </header>
-<main>
-    <section class="contact-section">
-        <div class="contact-shell">
-            <div class="contact-header">
-                <h1>Let Connect</h1>
-                <p>I'm always open to discussing new opportunities and collaborations</p>
-            </div>
 
-            <div class="contact-layout">
-                <div class="contact-form-card">
-                    <h3>Send Me a Message</h3>
+<section class="contact-section">
+    <h1>Let Connect</h1>
+    <p>I'm always open to discussing new opportunities and collaborations</p>
 
-                    <form class="contact-form">
-                        <div class="contact-form-row">
-                            <div class="field-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="N K Belie" required>
-                            </div>
+    <div class="contact-wrapper">
 
-                            <div class="field-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" placeholder="belie@gmail.com" required>
-                            </div>
-                        </div>
+        <div class="contact-form-box">
+            <h3>Send Me a Message</h3>
 
-                        <div class="field-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Project Idea">
-                        </div>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="N K Belie">
+                    </div>
 
-                        <div class="field-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell me about your project"></textarea>
-                        </div>
-
-                        <button type="submit">Send Message</button>
-                    </form>
+                    <div class="input-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="belie@gmail.com">
+                    </div>
                 </div>
 
-                <aside class="contact-sidebar">
-                    <div class="info-card">
-                        <h3>Contact Information</h3>
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Project Idea">
+                </div>
 
-                        <div class="info-item">
-                            <span class="info-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" focusable="false">
-                                    <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Z"></path>
-                                    <path d="m4 8 8 5 8-5"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:ndayisababelie@gmail.com">ndayisababelie@gmail.com</a></p>
-                            </div>
-                        </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea placeholder="Tell me about your project"></textarea>
+                </div>
 
-                        <div class="info-item">
-                            <span class="info-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" focusable="false">
-                                    <path d="M6.8 3.5h3.1l1.4 4.2-1.9 1.6a14 14 0 0 0 5 5l1.6-1.9 4.2 1.4v3.1a1.8 1.8 0 0 1-1.8 1.8A15.4 15.4 0 0 1 5 5.3a1.8 1.8 0 0 1 1.8-1.8Z"></path>
-                                </svg>
-                            </span>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+250785980556">+250 785 980 556</a></p>
-                            </div>
-                        </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
-                        <div class="info-item">
-                            <span class="info-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" focusable="false">
-                                    <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"></path>
-                                    <circle cx="12" cy="10" r="2.3"></circle>
-                                </svg>
-                            </span>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Kigali, Rwanda</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="contact-info-box">
+            <div class="info-card">
+                <h3>Contact Information</h3>
+                <p><i class="fa-regular fa-envelope"></i> Email<br>ndayisababelie@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Phone<br>+250 785 980 556</p>
+                <p><i class="fa-solid fa-location-dot"></i> Location<br>Kigali, Rwanda</p>
+            </div>
 
-                    <div class="info-card">
-                        <h3>Connect with Me</h3>
-
-                        <div class="social-links">
-                            <a class="social-link" href="https://github.com/NKBelie" target="_blank" rel="noreferrer">
-                                <span class="info-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" focusable="false">
-                                        <path d="M12 2.8a9.2 9.2 0 0 0-2.9 18c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1 2.9.8.1-.7.4-1 .7-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.8-.1-.3-.4-1.3.1-2.8 0 0 .9-.3 2.9 1a10 10 0 0 1 5.2 0c2-1.3 2.9-1 2.9-1 .5 1.5.2 2.5.1 2.8.6.8 1 1.7 1 2.8 0 3.8-2.3 4.6-4.6 4.9.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.2 9.2 0 0 0 12 2.8Z"></path>
-                                    </svg>
-                                </span>
-                                <span>GitHub</span>
-                            </a>
-
-                            <a class="social-link" href="#">
-                                <span class="info-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" focusable="false">
-                                        <path d="M6.8 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"></path>
-                                        <path d="M5.5 10.2h2.6V18H5.5z"></path>
-                                        <path d="M9.7 10.2h2.5v1.1h.1c.4-.7 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4.1V18h-2.6v-3.4c0-.8 0-1.9-1.2-1.9s-1.4.9-1.4 1.8V18H9.7z"></path>
-                                    </svg>
-                                </span>
-                                <span>LinkedIn</span>
-                            </a>
-
-                            <a class="social-link" href="#">
-                                <span class="info-icon" aria-hidden="true">
-                                    <svg class="outline-icon" viewBox="0 0 24 24" focusable="false">
-                                        <rect x="4.5" y="4.5" width="15" height="15" rx="4"></rect>
-                                        <circle cx="12" cy="12" r="3.3"></circle>
-                                        <circle cx="16.9" cy="7.2" r="1"></circle>
-                                    </svg>
-                                </span>
-                                <span>Instagram</span>
-                            </a>
-                        </div>
-                    </div>
-                </aside>
+            <div class="info-card">
+                <h3>Connect with Me</h3>
+                <p><i class="fa-brands fa-github"></i> GitHub</p>
+                <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
             </div>
         </div>
-    </section>
-</main>
+
+    </div>
+</section>
 
 </body>
 </html>
